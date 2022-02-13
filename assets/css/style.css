@@ -1,0 +1,215 @@
+@font-face {
+    font-family: projectHeader;
+    src: url("../font/Archivo-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: projectText;
+    src: url("../font/Archivo-Regular.ttf");
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: projectText, serif;
+    margin: 0;
+    background-color: #CAF0F8;
+    /*background-image: url("../images/background.jpg");*/
+    /*background-position: center bottom;*/
+    /*background-repeat: no-repeat;*/
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header {
+    text-shadow: 0px 00px 200px #000000;
+    color: #0077B6;
+    width: 100%;
+    font-size: 1.8em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+header p {
+    padding-top: 10px;
+    font-size: 1em;
+    font-family: projectHeader, serif;
+    color: #0077B6;
+}
+
+#container {
+    position: relative;
+}
+
+#content {
+    padding-bottom: 50px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.project {
+    background: rgb(0, 119, 182); /*#727272*/
+    border-left: solid 4px #03045E;
+    /*border-radius: 0 60px 60px 0;*/
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.project h2 {
+    font-family: projectHeader, serif;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+.main h2 {
+    font-family: projectHeader, serif;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 1.6em;
+}
+
+.project h1 {
+    font-family: projectHeader, serif;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+p {
+    line-height: 1.2em;
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    color: #CAF0F8;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+footer p {
+    color: #0077B6;
+    margin-top: 20px;
+}
+
+.seeCodeButton {
+    text-decoration: none;
+    display: inline-block;
+    background-image: url(../images/github.png);
+    background-size: 25px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    border: solid 2px #fff;
+    cursor: pointer;
+    padding: 10px 10px 10px 40px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 15px;
+    font-family: projectText, serif;
+}
+
+.seeCodeButton:hover {
+    background-color: #00B4D8;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    border-bottom: solid 2px #0077B6;
+    display: block;
+    color: #0077B6;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: projectHeader, sans-serif;
+    font-size: 1.8rem;
+}
+
+nav li a:hover {
+    color: #03045E;
+}
+
+nav li a.active {
+    border-bottom: solid 4px #03045E;
+    color: #03045E;
+    /*background-color: #495858;*/
+}
+
+/*contact me form*/
+label {
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: projectText, serif;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    text-decoration: none;
+    display: inline-block;
+    background-color: transparent;
+    border: solid 2px #fff;
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 15px;
+    font-family: projectText, serif;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #00B4D8;
+}

@@ -1,0 +1,128 @@
+@font-face {
+    font-family: projectHeader;
+    src: url("assets/font/Archivo-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: projectText;
+    src: url("assets/font/Archivo-Regular.ttf");
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: projectText, serif;
+    margin: 0;
+    background-color: #2f3a3a;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+header {
+    color: #ece8e4;
+    width: 100%;
+    font-size: 35px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#content {
+    color: #ece8e4;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.project {
+    background-color: #374343;
+    border-left: solid 2px #f8f8f3;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.project h2 {
+    font-family: projectHeader, serif;
+    letter-spacing: 0.03em;
+    color: #f8f8f3;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.2em;
+    font-size: 1.1em;
+    letter-spacing: 0.01em;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 30px 0px 15px 0px;
+}
+
+hr {
+    margin-bottom: 20px;
+    color: #f8f8f3;
+}
+
+a {
+    text-decoration-style: bold;
+    color: #f8f8f3;
+}
+
+.seeCodeButton {
+    text-decoration: none;
+    display: inline-block;
+    background-image: url(assets/images/github.png);
+    background-size: 25px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    border: solid 1px #f8f8f3;
+    cursor: pointer;
+    padding: 10px 10px 10px 40px;
+    vertical-align: middle;
+    color: #f8f8f3;
+    font-size: 15px;
+}
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav li a {
+    border-bottom: solid 3px #999999;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+nav li a:hover,
+nav li a.active {
+    border-bottom: solid 3px #f8f8f3;
+    /*background-color: #495858;*/
+}

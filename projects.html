@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A place to download the applications I create.">
+    <meta name="keywords" content="software,applications,projects">
+    <meta name="author" content="Conor Egan">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+    <title>Conor Egan</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- Heading -->
+        <header>
+            <h1>Conor Egan</h1>
+            <p>Software Engineer</p>
+        </header>
+
+        <!-- Content -->
+        <div id="content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+
+            <!-- Projects -->
+
+            <!-- Show Renamer -->
+            <div class="project">
+                <h2>Show Renamer</h2>
+                <p>This application renames show files to a better format. The idea was to create an application in
+                    order to gain some experience using APIs within a GUI application. I made a service which created a
+                    worker thread for each file read in, calling a movie database API on the title of the file,
+                    returning a JSON object which is used to get a better suggestion for the file name. Threading is
+                    very important in an application like this to make sure it does not block the UI thread and freeze
+                    the application.</p>
+                <a class="seeCodeButton" target="_blank" href="https://github.com/c-eg/ShowRenamer">See The Code</a>
+            </div>
+
+            <!-- Rocket League Discord Bot -->
+            <div class="project">
+                <h2>Rocket League Private Matches Discord Bot</h2>
+                <p>I created a Discord bot in Python using the Discord API wrapper <span><a
+                            href="https://github.com/Pycord-Development/pycord">Pycord</a></span>. This bot can be used
+                    in a discord server when a group of 6 people queue for a private match game, each having their match
+                    making rating (mmr)
+                    set.
+                    The users in the game get to vote on how to balance teams with random teams, balanced teams (based
+                    on mmr) or by having two captains pick.</p>
+                <a class="seeCodeButton" target="_blank"
+                    href="https://github.com/c-eg/Rocket-League-Private-Matches-Discord-Bot">See The Code</a>
+            </div>
+
+            <!-- CCTV -->
+            <div class="project">
+                <h2>CCTV Security Software</h2>
+                <p>Some info about the the application.</p>
+                <a class="seeCodeButton" target="_blank" href="https://github.com/c-eg/ShowRenamer">See The Code</a>
+            </div>
+
+            <!-- Word Auto Completion -->
+            <div class="project">
+                <h2>Word Auto Completion Application</h2>
+                <p>Some info about the the application.</p>
+                <a class="seeCodeButton" target="_blank" href="https://github.com/c-eg/ShowRenamer">See The Code</a>
+            </div>
+
+            <!-- Health Tracker -->
+            <div class="project">
+                <h2>Health Tracker</h2>
+                <p>Some info about the the application.</p>
+                <a class="seeCodeButton" target="_blank" href="https://github.com/c-eg/ShowRenamer">See The Code</a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Copyright &copy; Conor Egan 2022</p>
+        </footer>
+    </div>
+</body>
+
+</html>
