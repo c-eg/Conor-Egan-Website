@@ -1,10 +1,10 @@
 @font-face {
-    font-family: projectHeader;
+    font-family: cardHeader;
     src: url("../font/Archivo-SemiBold.ttf");
 }
 
 @font-face {
-    font-family: projectText;
+    font-family: cardText;
     src: url("../font/Archivo-Regular.ttf");
 }
 
@@ -14,12 +14,9 @@ html {
 }
 
 body {
-    font-family: projectText, serif;
+    font-family: cardText, serif;
     margin: 0;
-    background-color: #CAF0F8;
-    /*background-image: url("../images/background.jpg");*/
-    /*background-position: center bottom;*/
-    /*background-repeat: no-repeat;*/
+    background-color: #c7d2f0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -28,7 +25,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 header {
     text-shadow: 0px 00px 200px #000000;
-    color: #0077B6;
+    color: #3b527c;
     width: 100%;
     font-size: 1.8em;
     margin-top: 60px;
@@ -39,8 +36,8 @@ header {
 header p {
     padding-top: 10px;
     font-size: 1em;
-    font-family: projectHeader, serif;
-    color: #0077B6;
+    font-family: cardHeader, serif;
+    color: #3b527c;
 }
 
 #container {
@@ -49,38 +46,28 @@ header p {
 
 #content {
     padding-bottom: 50px;
-    width: 50%;
+    max-width: 1024px;
     height: auto;
     margin: auto;
 }
 
-.project {
-    background: rgb(0, 119, 182); /*#727272*/
-    border-left: solid 4px #03045E;
-    /*border-radius: 0 60px 60px 0;*/
+.card {
+    background: #3b527c;
     padding: 30px;
     margin-bottom: 20px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 
-.project h2 {
-    font-family: projectHeader, serif;
+.card h2 {
+    font-family: cardHeader, serif;
     letter-spacing: 0.01em;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 1.6em;
 }
 
-.main h2 {
-    font-family: projectHeader, serif;
-    letter-spacing: 0.01em;
-    color: #fff;
-    margin-bottom: 40px;
-    font-size: 1.6em;
-}
-
-.project h1 {
-    font-family: projectHeader, serif;
+.card h1 {
+    font-family: cardHeader, serif;
     letter-spacing: 0.01em;
     color: #fff;
     margin-bottom: 40px;
@@ -111,7 +98,7 @@ footer {
 }
 
 footer p {
-    color: #0077B6;
+    color: #3b527c;
     margin-top: 20px;
 }
 
@@ -129,7 +116,7 @@ footer p {
     vertical-align: middle;
     color: #fff;
     font-size: 15px;
-    font-family: projectText, serif;
+    font-family: cardText, serif;
 }
 
 .seeCodeButton:hover {
@@ -154,13 +141,13 @@ nav li {
 }
 
 nav li a {
-    border-bottom: solid 2px #0077B6;
+    border-bottom: solid 2px #3b527c;
     display: block;
-    color: #0077B6;
+    color: #3b527c;
     text-align: center;
     padding: 5px 10px;
     text-decoration: none;
-    font-family: projectHeader, sans-serif;
+    font-family: cardHeader, sans-serif;
     font-size: 1.8rem;
 }
 
@@ -180,7 +167,7 @@ label {
     letter-spacing: 0.01em;
     color: #fff;
     margin-bottom: 20px;
-    font-family: projectText, serif;
+    font-family: cardText, serif;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -206,7 +193,7 @@ input[type=submit] {
     vertical-align: middle;
     color: #fff;
     font-size: 15px;
-    font-family: projectText, serif;
+    font-family: cardText, serif;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
