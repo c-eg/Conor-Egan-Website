@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--background-colour: linear-gradient(225deg, #566C9C 0%, #0F1C38 100%);
+	--colour-primary: #DBE1FF;
+	--colour-secondary: #2F2E41;
+}
+
+body {
+	background: var(--background-colour);
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	min-width: 100%;
+	max-width: max-content;
+	min-height: 100vh;
+	color: var(--colour-primary);
+	letter-spacing: 0.025em;
+}
