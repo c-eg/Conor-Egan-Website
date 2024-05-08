@@ -12,6 +12,6 @@
 <header class="pt-10">
 	<Nav />
 </header>
-<main>
+<main class="mt-32">
 	<slot />
 </main>
