@@ -24,4 +24,9 @@ a {
 a.active {
     color: var(--colour-secondary);
 }
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--colour-secondary);
+}
 </style>
