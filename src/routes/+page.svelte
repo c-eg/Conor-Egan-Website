@@ -24,7 +24,7 @@
 			</a>
 			<a href="https://www.linkedin.com/in/c-eg/" target="_blank" class="flex justify-start items-center gap-3">
 				<enhanced:img src="$lib/assets/iconmonstr-linkedin-3.svg" alt="Linked In" />
-				<p class="text-xl text-[var(--colour-primary)] drop-shadow-2xl font-normal">Linked In</p>
+				<p class="text-xl text-[var(--colour-primary)] drop-shadow-2xl font-normal">LinkedIn</p>
 			</a>
 		</div>
 	</div>
