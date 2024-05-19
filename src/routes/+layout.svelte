@@ -9,9 +9,11 @@
 	import '@fontsource/roboto/900.css';
 </script>
 
-<header class="pt-10">
-	<Nav />
-</header>
-<main class="mt-32">
-	<slot />
-</main>
+<div class="p-5">
+	<header class="mt-5">
+		<Nav />
+	</header>
+	<main class="mt-24 lg:mt-32">
+		<slot />
+	</main>
+</div>
