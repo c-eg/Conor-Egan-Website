@@ -13,7 +13,7 @@
 	<header class="mt-5">
 		<Nav />
 	</header>
-	<main class="mt-24 lg:mt-32">
+	<main class="mt-16 lg:mt-32">
 		<slot />
 	</main>
 </div>
