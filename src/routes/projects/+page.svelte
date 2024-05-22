@@ -11,7 +11,9 @@
 </svelte:head>
 
 <div class="flex flex-col justify-center items-center">
-	<h1 class="text-3xl md:text-4xl lg:text-5xl text-[var(--colour-primary)] drop-shadow-2xl font-medium text-center">
+	<h1
+		class="text-3xl md:text-4xl lg:text-5xl text-[var(--colour-primary)] drop-shadow-2xl font-medium text-center"
+	>
 		Here are some of my <span class="text-[var(--colour-secondary)]">projects</span>
 	</h1>
 

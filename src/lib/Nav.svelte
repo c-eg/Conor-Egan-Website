@@ -45,7 +45,7 @@
 			flex-direction: column;
 			align-items: center;
 			text-align: center;
-            gap: 10px
+			gap: 10px;
 		}
 
 		.menu_icon {
@@ -54,9 +54,9 @@
 			display: block;
 		}
 
-        nav > ul > li > a {
-		    font-size: 24px;
-        }
+		nav > ul > li > a {
+			font-size: 24px;
+		}
 
 		input[type='checkbox'] {
 			display: none;
@@ -67,17 +67,17 @@
 			flex-direction: column;
 			border-radius: 5%;
 			width: 60%;
-            gap: 10px;
+			gap: 10px;
 		}
 
 		input[type='checkbox']:checked ~ .menu_icon {
 			transform: rotate(180deg);
-			transition: all .25s ease-in-out;
+			transition: all 0.25s ease-in-out;
 		}
 
 		input[type='checkbox'] ~ .menu_icon {
 			transform: rotate(0deg);
-			transition: all .25s ease-in-out;
+			transition: all 0.25s ease-in-out;
 		}
 
 		input[type='checkbox']:checked ~ ul {

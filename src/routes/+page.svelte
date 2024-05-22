@@ -17,8 +17,10 @@
 		a Software Engineer, passionate about crafting digital solutions.
 	</h2>
 
-	<div class="flex flex-col 
-	sm:flex-row justify-center items-center gap-10 mt-8">
+	<div
+		class="flex flex-col
+	sm:flex-row justify-center items-center gap-10 mt-8"
+	>
 		<div class="border-[3px] border-[var(--colour-secondary)] rounded-full">
 			<enhanced:img
 				src="$lib/assets/profile-picture.jpg?w=250"
