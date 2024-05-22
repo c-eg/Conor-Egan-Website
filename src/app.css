@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background-colour: radial-gradient(circle, rgba(49,76,99,1) 0%, rgba(28,50,69,1) 100%);
+	--colour-primary: #FFFFFF;
+	--colour-secondary: #ffcd04da;
+}
+
+@media screen and (min-width: 960px) {
+    html {
+        margin-right: calc(-100vw + 100%);
+		overflow-x: hidden;
+    }
+}
+
+body {
+	background: var(--background-colour) center top no-repeat;
+
+	font-family: 'Roboto', sans-serif, system-ui;
+
+	min-width: 100%;
+	min-height: 100vh;
+}
