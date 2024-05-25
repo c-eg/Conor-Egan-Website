@@ -2,7 +2,7 @@
 	import Project from './Project.svelte';
 
 	export let data;
-	let repositories = data.repositories?.sort((a, b) => b.stargazers_count - a.stargazers_count);
+	let repositories = data.repositories;
 </script>
 
 <svelte:head>
