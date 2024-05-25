@@ -1,4 +1,4 @@
-import { fetchRepositoriesFromApi } from '$lib/services/github';
+import { fetchRepositoriesFromApi } from '$lib/services/github/github';
 import { SECRET_GITHUB_API_TOKEN } from '$env/static/private';
 import { PUBLIC_GITHUB_USER } from '$env/static/public';
 import NodeCache from 'node-cache';
@@ -18,7 +18,7 @@ export async function getRepositories() {
 		return repositoryCache.get('repositories');
 	}
 
-	let repositories = await fetchRepositoriesFromApi(PUBLIC_GITHUB_USER, SECRET_GITHUB_API_TOKEN);
+	let repositories = await fetchRepositoriesFromApi(SECRET_GITHUB_API_TOKEN, PUBLIC_GITHUB_USER);
 	repositories = repositories.data.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
 	repositoryCache.set('repositories', repositories);

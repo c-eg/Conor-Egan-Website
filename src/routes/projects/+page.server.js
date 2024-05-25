@@ -1,4 +1,4 @@
-import { getRepositories } from '$lib/services/cache';
+import { getRepositories } from '$lib/services/github/cache';
 
 export async function load() {
 	try {
