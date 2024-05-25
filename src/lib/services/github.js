@@ -8,7 +8,7 @@ import { request } from '@octokit/request';
  * @returns a promise.
  */
 export function fetchRepositoriesFromApi(user, secret) {
-	return request('GET /users/' + user + '/repos', {
+	return request('GET /users/{username}/repos', {
 		headers: {
 			authorization: 'token ' + secret
 		},
