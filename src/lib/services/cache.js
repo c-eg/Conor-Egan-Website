@@ -4,7 +4,7 @@ import { PUBLIC_GITHUB_USER } from '$env/static/public';
 import NodeCache from 'node-cache';
 
 const repositoryCache = new NodeCache({
-	stdTTL: 1800, // 30 mins
+	stdTTL: 300, // 5 mins
 	maxKeys: 1
 });
 
