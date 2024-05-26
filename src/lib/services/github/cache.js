@@ -37,7 +37,7 @@ export async function getRepositories() {
 			title: repo.name,
 			description: repo.description,
 			stars: repo.stargazers_count,
-			languages: Object.keys(repositoryLanguages)
+			languages: repositoryLanguages !== undefined ? Object.keys(repositoryLanguages) : []
 		});
 	}
 
