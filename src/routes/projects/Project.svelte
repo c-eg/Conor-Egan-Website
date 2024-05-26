@@ -3,6 +3,7 @@
 	export let title;
 	export let description;
 	export let stars;
+	export let languages;
 </script>
 
 <a
@@ -14,8 +15,21 @@
 >
 	<p class="text-2xl lg:text-3xl text-[var(--colour-secondary)] font-medium">{title}</p>
 	<p class="text-xl lg:text-2xl font-normal">{description}</p>
+
 	<div class="flex justify-center items-center gap-2">
 		<enhanced:img src="$lib/assets/star.svg" alt="Star" />
 		<p class="text-xl lg:text-2xl font-normal">{stars}</p>
 	</div>
+
+	{#if languages !== undefined && languages.length > 0}
+		<div class="flex flex-wrap gap-2">
+			{#each languages as lang}
+				<p
+					class="text-md lg:text-lg font-medium bg-yellow-600 bg-opacity-20 rounded-full px-4 py-1 text-[var(--colour-secondary)]"
+				>
+					{lang}
+				</p>
+			{/each}
+		</div>
+	{/if}
 </a>
