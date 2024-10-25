@@ -1,8 +1,7 @@
 <script>
 	import { page } from '$app/stores';
-	let path;
 
-	$: path = $page.url.pathname;
+	let path = $derived($page.url.pathname);
 </script>
 
 <nav>

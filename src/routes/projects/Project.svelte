@@ -1,9 +1,11 @@
 <script>
-	export let link;
-	export let title;
-	export let description;
-	export let stars;
-	export let languages;
+	let {
+		link,
+		title,
+		description,
+		stars,
+		languages
+	} = $props();
 </script>
 
 <a

@@ -1,7 +1,7 @@
 <script>
 	import Project from './Project.svelte';
 
-	export let data;
+	let { data } = $props();
 	let repositories = data.repositories;
 </script>
 
