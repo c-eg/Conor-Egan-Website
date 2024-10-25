@@ -3,6 +3,8 @@
 	import '../app.css';
 	import '@fontsource/roboto/400.css';
 	import '@fontsource/roboto/500.css';
+
+	let { children } = $props();
 </script>
 
 <div class="p-5">
@@ -10,6 +12,6 @@
 		<Nav />
 	</header>
 	<main class="mt-16 lg:mt-32">
-		<slot />
+		{@render children?.()}
 	</main>
 </div>
