@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>Home | Conor Egan</title>
-	<meta name="description" content="Portfolio website for Conor Egan, a Software Engineer." />
+	<meta content="Portfolio website for Conor Egan, a Software Engineer." name="description" />
 </svelte:head>
 
 <div class="flex flex-col justify-center items-center gap-10 sm:gap-12 lg:gap-16">
@@ -18,25 +18,25 @@
 	<div class="flex flex-col sm:flex-row justify-center items-center gap-10 mt-8">
 		<div class="border-[3px] border-[var(--colour-secondary)] rounded-full">
 			<enhanced:img
-				src="$lib/assets/profile-picture.jpg?w=250"
 				alt="Conor"
 				class="rounded-full m-2"
+				src="$lib/assets/profile-picture.jpg?w=250"
 			/>
 		</div>
 		<div class="flex flex-row sm:flex-col gap-5">
 			<a
+				class="flex justify-start items-center gap-3"
 				href="https://github.com/c-eg"
 				target="_blank"
-				class="flex justify-start items-center gap-3"
 			>
-				<enhanced:img src="$lib/assets/github-mark.svg" alt="GitHub" />
+				<enhanced:img alt="GitHub" src="$lib/assets/github-mark.svg" />
 			</a>
 			<a
+				class="flex justify-start items-center gap-3"
 				href="https://www.linkedin.com/in/c-eg/"
 				target="_blank"
-				class="flex justify-start items-center gap-3"
 			>
-				<enhanced:img src="$lib/assets/iconmonstr-linkedin-3.svg" alt="Linked In" />
+				<enhanced:img alt="Linked In" src="$lib/assets/iconmonstr-linkedin-3.svg" />
 			</a>
 		</div>
 	</div>
