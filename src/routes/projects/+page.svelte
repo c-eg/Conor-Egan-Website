@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>Projects | Conor Egan</title>
-	<meta name="description" content="Conor Egan's software projects." />
+	<meta content="Conor Egan's software projects." name="description" />
 </svelte:head>
 
 <div class="flex flex-col justify-center items-center">

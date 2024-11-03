@@ -1,7 +1,4 @@
-import {
-	fetchRepositoriesFromApi,
-	fetchRepositoryLanguagesFromApi
-} from '$lib/services/github/github';
+import { fetchRepositoriesFromApi, fetchRepositoryLanguagesFromApi } from '$lib/services/github/github';
 import { SECRET_GITHUB_API_TOKEN } from '$env/static/private';
 import { PUBLIC_GITHUB_USER } from '$env/static/public';
 import NodeCache from 'node-cache';
