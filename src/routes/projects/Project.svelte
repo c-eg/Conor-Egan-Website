@@ -1,4 +1,14 @@
 <script>
+	/**
+	 * @typedef Props
+	 * @property {string} link Some documentation
+	 * @property {string} title Some documentation
+	 * @property {string} description Some documentation
+	 * @property {number} stars Some documentation
+	 * @property {string[]} languages Some documentation
+	 */
+
+	/** @type {Props} */
 	let {
 		link,
 		title,

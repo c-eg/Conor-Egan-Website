@@ -1,7 +1,10 @@
 <script>
 	import Project from './Project.svelte';
+	import '../../lib/services/github/types.js';
 
 	let { data } = $props();
+
+	/** @type {Repository[] | undefined} */
 	let repositories = data.repositories;
 </script>
 
