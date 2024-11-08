@@ -10,7 +10,7 @@ export async function load() {
 	} catch (err) {
 		console.log(err);
 		return {
-			error: true
+			repositories: null
 		};
 	}
 }
