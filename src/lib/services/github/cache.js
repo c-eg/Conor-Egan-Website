@@ -2,6 +2,7 @@ import { fetchRepositoriesFromApi, fetchRepositoryLanguagesFromApi } from '$lib/
 import { SECRET_GITHUB_API_TOKEN } from '$env/static/private';
 import { PUBLIC_GITHUB_USER } from '$env/static/public';
 import NodeCache from 'node-cache';
+import './types.js';
 
 const repositoryCache = new NodeCache({
 	stdTTL: 300, // 5 mins
@@ -11,13 +12,14 @@ const repositoryCache = new NodeCache({
 /**
  * Gets the public repository data, with repository languages used, from the cache, or GitHub API.
  *
- * @returns the repositories.
+ * @returns {Promise<Repository[]>} the repositories.
  */
 export async function getRepositories() {
 	if (repositoryCache.has('repositories')) {
 		return repositoryCache.get('repositories');
 	}
 
+	/** @type {Repository[]} */
 	const repos = [];
 
 	let repositoriesFromGithub = (
