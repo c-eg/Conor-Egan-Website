@@ -4,8 +4,16 @@
 
 	let { data } = $props();
 
-	/** @type {Repository[] | null} */
+	/** @type {Repository[]} */
 	let repositories = data.repositories;
+
+	/** @type {string[]} */
+	let repositoryLanguages = [...new Set(repositories.flatMap(repo => repo.languages))];
+
+	/** @type {string} */
+	let languageFilter = $state("");
+
+	let filteredRepositories = $derived(languageFilter === "" ? repositories : repositories.filter(repo => repo.languages.includes(languageFilter)));
 </script>
 
 <svelte:head>
@@ -20,21 +28,27 @@
 		Here are some of my <span class="text-[var(--colour-secondary)]">projects</span>
 	</h1>
 
-	{#if repositories === null}
-		<p class="text-xl text-[var(--colour-primary)] drop-shadow-2xl font-normal mt-20">
-			There was an error with the GitHub API.
-		</p>
-	{:else if repositories.length > 0}
-		<div class="flex flex-col gap-6 mt-16 max-w-3xl lg:max-w-4xl w-full">
-			{#each repositories as repo}
-				<Project
-					link={repo.link}
-					title={repo.title}
-					description={repo.description}
-					stars={repo.stars}
-					languages={repo.languages}
-				/>
-			{/each}
+	{#if repositories.length > 0}
+		<!-- todo: fix width changing depending on content of project -->
+		<div class="mt-16">
+			<select bind:value={languageFilter}>
+				<option value={""}>Filter by language</option>
+				{#each repositoryLanguages as lang}
+					<option>{lang}</option>
+				{/each}
+			</select>
+
+			<div class="flex flex-col gap-6 max-w-3xl lg:max-w-4xl w-full">
+				{#each filteredRepositories as repo}
+					<Project
+						link={repo.link}
+						title={repo.title}
+						description={repo.description}
+						stars={repo.stars}
+						languages={repo.languages}
+					/>
+				{/each}
+			</div>
 		</div>
 	{:else}
 		<p class="text-xl text-[var(--colour-primary)] drop-shadow-2xl font-normal mt-20">
