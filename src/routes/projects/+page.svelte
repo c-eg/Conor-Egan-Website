@@ -11,9 +11,11 @@
 	let repositoryLanguages = [...new Set(repositories.flatMap(repo => repo.languages))];
 
 	/** @type {string} */
-	let languageFilter = $state("");
+	let languageFilter = $state('');
 
-	let filteredRepositories = $derived(languageFilter === "" ? repositories : repositories.filter(repo => repo.languages.includes(languageFilter)));
+	// todo: make this a function to filter/sort
+	// todo: add sorting functionality
+	let filteredRepositories = $derived(languageFilter === '' ? repositories : repositories.filter(repo => repo.languages.includes(languageFilter)));
 </script>
 
 <svelte:head>
@@ -29,16 +31,17 @@
 	</h1>
 
 	{#if repositories.length > 0}
-		<!-- todo: fix width changing depending on content of project -->
-		<div class="mt-16">
-			<select bind:value={languageFilter}>
-				<option value={""}>Filter by language</option>
+		<div class="flex flex-col justify-center items-center mt-16 max-w-3xl lg:max-w-4xl w-full">
+			<!-- todo: style the select and options to look nice on mobile -->
+			<select bind:value={languageFilter}
+							class="mb-4 p-2 border border-opacity-20 border-white rounded-lg hover:border-opacity-30 focus:outline-none hover:bg-slate-500 hover:bg-opacity-5 bg-transparent text-white">
+				<option value={""} class="text-black">All Languages</option>
 				{#each repositoryLanguages as lang}
-					<option>{lang}</option>
+					<option class="text-black">{lang}</option>
 				{/each}
 			</select>
 
-			<div class="flex flex-col gap-6 max-w-3xl lg:max-w-4xl w-full">
+			<div class="flex flex-col gap-6 w-full">
 				{#each filteredRepositories as repo}
 					<Project
 						link={repo.link}
