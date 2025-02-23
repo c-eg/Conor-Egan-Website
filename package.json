@@ -34,7 +34,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fontsource/roboto": "^5.1.1",
-		"@octokit/request": "^9.1.4",
+		"@octokit/request": "^9.2.1",
 		"node-cache": "^5.1.2"
 	}
 }
