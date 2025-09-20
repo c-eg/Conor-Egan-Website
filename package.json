@@ -36,8 +36,5 @@
 		"@fontsource/roboto": "^5.2.8",
 		"@octokit/request": "^10.0.3",
 		"node-cache": "^5.1.2"
-	},
-    "optionalDependencies": {
-        "@rollup/rollup-linux-x64-gnu": "4.32.0"
-    }
+	}
 }
